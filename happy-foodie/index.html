@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy-Foodie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="mycss.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a id="brand" class="navbar-brand" href="#"><img src="img/logo.png" alt="Happy Foodie" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Recipes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Fast Foods</a></li>
+                            <li><a class="dropdown-item" href="#">Dier</a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#"> <b>CHOOSE INGREDIENTS</b></a>
+        <a href="#"> Dairy</a>
+        <a href="#"> Syrups or Drinks</a>
+        <a href="#">Vegetables</a>
+        <a href="#">Fruits <div class="dropdown">
+                <div class="dropdown-content">
+                    <p>select fruits</p>
+                    <label class="container">One
+                        <input type="checkbox" >
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Two
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Three
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Four
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div></a>
+        <a href="#"> Dough</a>
+        <a href="#"> Spices</a>
+        <a href="#"> Pulses</a>
+
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <a href="#" data-bs-target="#mySidenav"
+        class="btn btn-primary">Choose Your Ingredients</a></span>
+
+    
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/tandoorihcicken.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color:rgb(180, 180, 180)">
+                        <h5 class="card-title">Chocolate Shake</h5>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1" class="btn btn-primary">See
+                            Ingredients</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-primary">See
+                            Recipie</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/chocshake.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color:rgb(180, 180, 180)">
+                        <h5 class="card-title">Chocolate Shake</h5>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-primary">See
+                            Ingredients</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-primary">See
+                            Recipie</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/coldcof.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color:rgb(180, 180, 180)">
+                        <h5 class="card-title">Cold Coffee</h5>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="btn btn-primary">See
+                            Ingredients</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="btn btn-primary">See
+                            Recipie</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col" id="sirA">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/greenchutney.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color:rgb(180, 180, 180)">
+                        <h5 class="card-title">Green Chutney</h5>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal4" class="btn btn-primary">See
+                            Ingredients</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal4" class="btn btn-primary">See
+                            Recipie</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/salad.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color:rgb(180, 180, 180)">
+                        <h5 class="card-title">Salad</h5>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal5" class="btn btn-primary">See
+                            Ingredients</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal5" class="btn btn-primary">See
+                            Recipie</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/tea.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color:rgb(180, 180, 180)">
+                        <h5 class="card-title">Tea</h5>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal6" class="btn btn-primary">See
+                            Ingredients</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal6" class="btn btn-primary">See
+                            Recipie</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="exampleModalLabel">Tandoori Chicken</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <img src="img/tandoorihcicken.jpeg" alt="Coach1" class="modimg">
+                        </div>
+                        <div class="col">
+                            DETAILS
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="exampleModalLabel">Chocolate Shake</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <img src="img/chocshake.jpg" alt="Coach1" class="modimg">
+                        </div>
+                        <div class="col">
+                            <ul>
+                                <li>Cocoa powder</li>
+                                <li>Milk</li>
+                                <li>Sugar</li>
+                                <li>Chocolate Ice Cream</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="exampleModalLabel">Cold Coffee</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <img src="img/coldcof.jpg" alt="Coach1" class="modimg">
+                        </div>
+                        <div class="col">
+                            Details
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="exampleModalLabel">Greenchutney</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <img src="img/greenchutney.jpg" alt="Coach1" class="modimg">
+                        </div>
+                        <div class="col">
+                            <ul>
+                                <li>½ cup mint leaves / pudina</li>
+                                <li>3 clove garlic</li>
+                                <li>3 inch ginger</li>
+                                <li>2 tbsp roasted gram dal / putani</li>
+                                <li>3 green chilli</li>
+                                <li>½ tsp cumin powder / jeera powder</li>
+                                <li>1 tsp chaat masala</li>
+                                <li>½ tsp sugar</li>
+                                <li>½ tsp salt</li>
+                                <li>pinch of hing / asafoetida</li>
+                                <li>½ cup water</li>
+                                <li>1tbsp lemon juice</li>
+
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="exampleModalLabel">Salad</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <img src="img/salad.jpg" alt="Coach1" class="modimg">
+                            </div>
+                            <div class="col">
+                                <ul>
+                                    <li>Vegetables</li>
+                                    <li>Red sauce</li>
+                                    <li>Mustard Sauce</li>
+                                    <li>Mayonise</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="exampleModalLabel">Tea</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <img src="img/tea.jpg" alt="Coach1" class="modimg">
+                            </div>
+                            <div class="col">
+                                Details
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+        <div class="container-fluid bg-body-tertiary mt-auto ">
+            <br>
+            <div class="container mt-5">
+                <footer class="row">
+                    <div class="col-sm mb-3">
+                        <a id="brand" class="navbar-brand" href="https://thapar.edu/"><img
+                                src="https://www.thapar.edu/images/logo.png" alt="Thapr-sports"></a>
+                    </div>
+
+                    <div class="col-sm mb-3">
+                        <h5>About us</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm mb-3">
+                        <h5>Special pages</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm mb-3">
+                        <h5>Contact us</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+
+
+                    </div>
+
+                    <div class="row py-4 my-4 border-top">
+
+                        <p>&copy; 2023 Thapar University, Inc. All rights reserved.</p>
+
+                    </div>
+
+
+
+                </footer>
+            </div>
+        </div>
+</body>
+
+</html>
